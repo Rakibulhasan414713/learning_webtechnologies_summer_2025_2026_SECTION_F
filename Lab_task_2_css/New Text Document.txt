@@ -1,0 +1,57 @@
+ <style>
+      body {
+         background:#f9f9f9;
+         font-family: Arial, sans-serif;
+      }
+      form {
+         width: 400px;
+         margin: 40px auto;
+         padding: 20px;
+         border: 1px solid #333;
+         border-radius: 6px;
+         background:#fff;
+      }
+      h2 {
+         text-align: center;
+         margin-bottom: 20px;
+      }
+      .form-group {
+         margin-bottom: 15px;
+      }
+      label {
+         display: block;
+         margin-bottom: 5px;
+         font-weight: bold;
+      }
+      input[type="text"],
+      input[type="email"],
+      input[type="date"],
+      input[type="password"],
+      input[type="file"],
+      select {
+         width: 100%;
+         padding: 8px;
+         border: 1px solid #aaa;
+         border-radius: 4px;
+      }
+      .buttons {
+         text-align: center;
+         margin-top: 15px;
+      }
+      input[type="submit"] {
+         background:#4CAF50;
+         color:#fff;
+         border:none;
+         padding:8px 15px;
+         margin:5px;
+         cursor:pointer;
+      }
+      input[type="reset"] {
+         background:#f44336;
+         color:#fff;
+         border:none;
+         padding:8px 15px;
+         margin:5px;
+         cursor:pointer;
+      }
+   </style>
