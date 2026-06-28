@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Blood Donation Program - Here you can Register as a donor or request emergency blood.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blood Donation</title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  background-color: #fdfdfd;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+header, footer {
+  background-color: #b30000;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+main {
+  padding: 20px;
+  max-width: 900px;   
+  margin: auto;
+}
+
+h2 {
+  color: #b30000;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+form {
+  margin-bottom: 30px;
+  border: 1px solid #ccc;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+fieldset {
+  border: 1px solid #b30000;
+  margin-bottom: 15px;
+  padding: 15px;
+}
+
+legend {
+  font-weight: bold;
+  color: #b30000;
+}
+
+table {
+  width: 100%;              
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+table, tr, td, th {
+  border: 1px solid #ccc;
+}
+
+td, th {
+  padding: 10px;
+  text-align: left;          
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+input, select, textarea {
+  width: 100%;               
+  padding: 8px;
+  margin: 5px 0;
+  box-sizing: border-box;    
+}
+
+input[type="submit"], input[type="reset"] {
+  width: auto;
+  background-color: #b30000;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+input[type="submit"]:hover {
+  background-color: #800000;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Blood Donation</h1>
+    <p>Here you can Register as a donor or request emergency blood support.</p>
+  </header>
+
+  <main>
+    <h2>Blood Donate Registration Form</h2>
+    <form>
+      <fieldset>
+        <legend>Donor Information</legend>
+        <table>
+          <tr><td>Name:</td><td><input type="text" name="name"></td></tr>
+          <tr><td>Age:</td><td><input type="number" name="age"></td></tr>
+          <tr><td>Gender:</td>
+              <td>
+                <input type="radio" name="gender" value="Male"> Male
+                <input type="radio" name="gender" value="Female"> Female
+                <input type="radio" name="gender" value="Other"> Other
+              </td>
+          </tr>
+          <tr><td>Blood Group:</td>
+              <td>
+                <select name="bloodgroup">
+                  <option>A+</option><option>A-</option>
+                  <option>B+</option><option>B-</option>
+                  <option>AB+</option><option>AB-</option>
+                  <option>O+</option><option>O-</option>
+                </select>
+              </td>
+          </tr>
+          <tr><td>Phone:</td><td><input type="tel" name="phone"></td></tr>
+          <tr><td>Email:</td><td><input type="email" name="email"></td></tr>
+          <tr><td>Address:</td><td><textarea name="address"></textarea></td></tr>
+          <tr><td>Last Donation Date:</td><td><input type="date" name="lastdonation"></td></tr>
+          <tr><td>Health Condition:</td><td><textarea name="health"></textarea></td></tr>
+        </table>
+      </fieldset>
+      <input type="submit" value="Register">
+      <input type="reset" value="Reset">
+    </form>
+
+    <h2>Blood Request Form</h2>
+    <form>
+      <fieldset>
+        <legend>Request Information</legend>
+        <table>
+          <tr><td>Patient Name:</td><td><input type="text" name="patient"></td></tr>
+          <tr><td>Required Blood Group:</td>
+              <td>
+                <select name="reqblood">
+                  <option>A+</option><option>A-</option>
+                  <option>B+</option><option>B-</option>
+                  <option>AB+</option><option>AB-</option>
+                  <option>O+</option><option>O-</option>
+                </select>
+              </td>
+          </tr>
+          <tr><td>Hospital Name:</td><td><input type="text" name="hospital"></td></tr>
+          <tr><td>Emergency Contact:</td><td><input type="tel" name="emergency"></td></tr>
+          <tr><td>Required Date:</td><td><input type="date" name="reqdate"></td></tr>
+          <tr><td>Additional Message:</td><td><textarea name="message"></textarea></td></tr>
+        </table>
+      </fieldset>
+      <input type="submit" value="Request">
+      <input type="reset" value="Reset">
+    </form>
+
+    <h2>Available Blood Groups</h2>
+    <table>
+      <tr><th>Blood Group</th><th>Number of Donors</th></tr>
+      <tr><td>A+</td><td>25</td></tr>
+      <tr><td>B+</td><td>18</td></tr>
+      <tr><td>O+</td><td>30</td></tr>
+      <tr><td>AB+</td><td>12</td></tr>
+    </table>
+  </main>
+
+  <footer>
+    <p>&copy; @2026 webtechnologies section : F </p>
+  </footer>
+</body>
+</html>
