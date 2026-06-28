@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Registration Form</title>   
+ <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+   <form method="post" action="">
+      <h2>REGISTRATION</h2>
+
+      <div class="form-group">
+         <label>Name:</label>
+         <input type="text" name="myname">
+      </div>
+
+      <div class="form-group">
+         <label>Email:</label>
+         <input type="email" name="email">
+      </div>
+
+      <div class="form-group">
+         <label>Gender:</label>
+         <input type="radio" name="gender" value="Male"> Male
+         <input type="radio" name="gender" value="Female"> Female
+         <input type="radio" name="gender" value="Other"> Other
+      </div>
+
+      <div class="form-group">
+         <label>Date of Birth:</label>
+         <input type="date" name="dob">
+      </div>
+
+      <div class="form-group">
+         <label>Password:</label>
+         <input type="password" name="password">
+      </div>
+
+      <div class="form-group">
+         <label>Confirm Password:</label>
+         <input type="password" name="confirm_password">
+      </div>
+
+      <div class="form-group">
+         <label>Address:</label>
+         <input type="text" name="address">
+      </div>
+
+      <div class="form-group">
+         <label>Blood Group:</label>
+         <select name="blood_group">
+            <option>A+</option><option>A-</option>
+            <option>B+</option><option>B-</option>
+            <option>AB+</option><option>AB-</option>
+            <option>O+</option><option>O-</option>
+         </select>
+      </div>
+
+      <div class="form-group">
+         <label>Department:</label>
+         <select name="department">
+            <option>CSE</option><option>BBA</option><option>EEE</option>
+         </select>
+      </div>
+
+      <div class="form-group">
+         <label>Degree:</label>
+         <input type="checkbox" value="SSC"> SSC
+         <input type="checkbox" value="HSC"> HSC
+         <input type="checkbox" value="BSc"> BSc
+      </div>
+
+      <div class="form-group">
+         <label>Photo:</label>
+         <input type="file" name="photo">
+      </div>
+
+      <div class="buttons">
+         <input type="submit" value="Submit">
+         <input type="reset" value="Reset">
+      </div>
+   </form>
+
+</body>
+</html>
